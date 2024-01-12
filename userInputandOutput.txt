@@ -1,0 +1,40 @@
+Input: 我最喜欢去图书馆和书店。(S
+  (NP 我/PRP)
+  最/RB
+  喜欢/VV
+  去/RB
+  图/VV
+  (CC_CLAUSE (NP 书馆/NN) 和/CC (NP 书店/NN))
+  。/.)
+(CC_CLAUSE (NP 书馆/NN) 和/CC (NP 书店/NN))
+Input: 我最喜欢去图书馆和书店。(S
+  (NP 我/PRP)
+  最/RB
+  喜欢/VV
+  去/RB
+  图/VV
+  (CC_CLAUSE (NP 书馆/NN) 和/CC (NP 书店/NN))
+  。/.)
+(CC_CLAUSE (NP 书馆/NN) 和/CC (NP 书店/NN))
+Input: 我买书，小吃和一瓶水。(S (NP 我/PRP) 买/VV (NP 书，/NN) (NP 小吃/NN) 和/CC 一/CD (NP 瓶/NNB) 水。/.)
+Input: 我和我的朋友去过了电影院。(S
+  (IN_CLAUSE (NP 我/PRP) 和/IN (NP 我/PRP))
+  的/DEC
+  (NP 朋友/NN)
+  去过/VV
+  了/AS
+  (NP 电/NN)
+  (NP 影院/NN)
+  。/.)
+(IN_CLAUSE (NP 我/PRP) 和/IN (NP 我/PRP))
+Input: 他和她都穿白色的体恤衫。(S
+  (CC_CLAUSE (NP 他/PRP) 和/CC (NP 她/PRP))
+  都/RB
+  穿/VV
+  (NP 白色/NN)
+  的/DEC
+  (NP 体/NN)
+  (NP 恤/NN)
+  衫。/.)
+(CC_CLAUSE (NP 他/PRP) 和/CC (NP 她/PRP))
+

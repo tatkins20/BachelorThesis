@@ -1,0 +1,27 @@
+def subpalindrome(s):
+
+    if len(s) == 0 or len(s) == 1:
+        return True
+    elif s[0] == s[-1]:
+        subpalindrome(s[1:-1])
+    else:
+        return False
+
+
+
+
+def palindrome(s):
+    assert  1 <= len(s) <= 5000, "length not within range"
+    for char in s:
+        assert ord('a') <= ord(char) <= ord('z'), "char not in ascii range"
+    substrings = []
+    for grouplen in range(1, len(s)+1):
+        for i in range(len(s)):
+            slicedstring = s[i:i+grouplen]
+            if slicedstring not in substrings:
+                substrings.append(slicedstring)
+    result = 0
+    for item in substrings:
+        if subpalindrome(item):
+            result += 1
+    return result
